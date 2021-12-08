@@ -1,0 +1,50 @@
+{
+    "heroes": [
+        {
+            "id": 1,
+            "name": "James 'Logan' Howlett,",
+            "alias": "Wolverine",
+            "powers": [
+                "Regenerative Healing Factor",
+                "Retractable Claws",
+                "Superhuman Sense and Reflexes",
+                "Superhuman Strength and Stamina"
+            ],
+            "team": "X-Men"
+        },
+        {
+            "id": 2,
+            "name": "Peter Parker",
+            "alias": "Spider-Man",
+            "powers": [
+                "Spider Physiology",
+                "Regenerative Healing Factor",
+                "Superhuman Sense and Reflexes",
+                "Superhuman Strength and Stamina",
+                "Spider Sense"
+            ],
+            "team": "Avengers"
+        },
+        {
+            "id": 3,
+            "name": "Thor Odinson",
+            "alias": null,
+            "powers": ["Asgardian Physiology", "God of Thunder"],
+            "team": "Avengers"
+        },
+        {
+            "id": 4,
+            "name": "Charles Xavier",
+            "alias": "Professor X",
+            "powers": ["Telepathy", "Telekinesis"],
+            "team": "X-Men"
+        },
+        {
+            "id": 5,
+            "name": "Frank Castle",
+            "alias": "Punisher",
+            "powers": ["Maximum Human Conditioning", "Weapons Master"],
+            "team": null
+        }
+    ]
+}
