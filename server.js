@@ -35,11 +35,11 @@ app.get("/heroes/:id", (req, res) => {
     const reqID = req.params.id;
     const hero = heroesData.heroes[reqID - 1];
 
-    if (hero === undefined) {
-        res.send('you\'ve gone too far');
+    if (hero) {
+        res.json(hero);
+    } else {
+        res.status(404).send("Not Found");
     }
-
-    res.json(hero);
 });
 
 app.put("/heroes/:id", (req, res) => {
@@ -72,6 +72,18 @@ app.put("/heroes/:id", (req, res) => {
 
     console.log(existingHero);
     res.json(existingHero);
+});
+
+app.delete("/heroes/:id", (req, res) => {
+    const reqID = req.params.id;
+    const heroesDatabase = heroesData.heroes;
+
+    const findID = heroesDatabase.findIndex((hero) => hero.id === parseInt(reqID));
+
+    delete heroesDatabase[findID];
+
+    console.log(heroesDatabase);
+    res.json(heroesDatabase);
 });
 
 /* Server Listening on Port */
